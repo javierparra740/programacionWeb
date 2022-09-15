@@ -1,0 +1,6 @@
+<h2>Personajes de Rick And Morty</h2>
+<div *ngIf="personajes">
+  <div *ngFor="let personaje of personajes.results">
+    <p>{{personaje.id}} - {{ personaje.name }}</p>
+  </div>
+</div>
